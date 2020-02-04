@@ -1,103 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-image: url("image.jpg");
+        background-color: #cccccc;
+      }
 
-<head>
-  <title> My Portfolio </title>
-</head>
+      h1 {
+        color: #999999;
+        font-family: "Times New Roman", Times, serif;
+        font-size: px;
+        max-width: 350px;
+      }
 
-<body>
+      h2 {
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        max-width: 250px;
+        color: #999999;
+        padding: 0.3em;
+      }
 
-  <header>
-    <h1> My Portfolio</h1>
-    <h2>Farhan Begg</h2>
-  </header>
+      section {
+        position: relative;
+        top: -400px;
+        left: 50px;
+        max-width: 350px;
+      }
 
-  <figure>
-    <img src="thumbnail.jpeg" alt="Portfolio Picture" style="width:15%" />
-    <figcaption>Hanging in SF</figcaption>
-  </figure>
+      .card {
+        position: relative;
+        top: 50px;
+        left: 500px;
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        max-width: 200px;
+        text-align: center;
+      }
 
-  <!--Education Section -->
-  <section>
-    <h3>Education</h3>
-    <ul>
-      <li>Make School 2021: Baechelors in Applied Computer Science</li>
-    </ul>
-  </section>
+      .title {
+        color: grey;
+        font-size: 18px;
+        padding: 1em;
+      }
 
-  <!--Skills Section -->
-  <section>
-    <header>
-      <h2>My Skills</h2>
-    </header>
+      head {
+        position: relative;
+        top: -840px;
+        left: 900px;
+      }
 
-    <ul>
-      <li>Front End Software Developer</li>
-      <li>Back End Software Developer</li>
-      <li>Problem Solving</li>
-      <li>Open-mindedness</li>
-      <li>Accountability</li>
-    </ul>
-  </section>
+      ul {
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        max-width: 350px;
+        list-style-type: none;
+        padding: 1em;
+      }
 
-  <!-- My Project Section-->
-  <section>
-    <h2>My Projects</h2>
-    <ul>
-      <li>Tweet Generator: randomly selects words to create a sentence</li>
-      <li>Playlister: Allows users to create a playlist using Youtube</li>
-      <li>
-        Make Wiki: Allows individuals to login and upload and view Blog Posts
-      </li>
-    </ul>
-  </section>
+      .about {
+        box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+        max-width: 350px;
+        padding: 1em;
+        position: relative;
+        top: -400px;
+        left: 50px;
+      }
 
-  <!--About Me Section-->
-  <article>
-    <h2>About Me</h2>
-    <p>
-      My name is Farhan Begg, I was born in Fiji. When I moved to America,<br />
-      I was intrigued by the drastic difference in technology. At that very <br />
-      moment I knew I wanted to involve myself in technology.
-      Here I am <br /> today, 10 year later finishing my Baechelors in Computer Science.
-    </p>
-  </article>
+      form {
+        position: relative;
+        top: -1125px;
+        left: 800px;
+      }
 
-  <form action="/">
-    <h2>Contact Information</h2>
-    <ul>
+      footer {
+        position: relative;
+        top: -960px;
+        left: 800px;
+        color: #999999;
+      }
 
-      <li>
-        <input id='input-name' type="text" placeholder="Enter your Name">
-        <label for="input-name">Full Name </label>
-      </li>
+      .footer-list a {
+        color: #999999;
+        color: grey;
+        padding: 1em;
+      }
+    </style>
+  </head>
 
-      <li>
-        <input id='input-name' type="email" placeholder="Enter your Email">
-        <label for="input-name">Email Address</label>
-      </li>
+  <body>
+    <div class="card">
+      <img src="thumbnail.jpeg" alt="Farhan Begg" style="width:100%" />
+      <p>Farhan Begg</p>
+      <p>Make School 2021</p>
+      <p class="title">Aspiring Full Stack Developer</p>
+    </div>
 
-      <li>
-        <input id='input-name' type="text" placeholder="Enter your Number">
-        <label for="input-name">Phone Number</label>
-      </li>
-      <button type='submit'>submit</button>
-    </ul>
-  </form>
+    <!--Skills Section -->
+    <section>
+      <header>
+        <h2>My Skills</h2>
+      </header>
 
-  <footer>
-    <h2> Social Media </h2>
-    <ul>
-      <li><a href="https://github.com/NoblePrinceIII"> GitHub </a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/farhan-begg-57b48519b/">
-          Linkedin
-        </a>
-      </li>
-    </ul>
-  </footer>
+      <ul>
+        <li>Django</li>
+        <li>Node.js</li>
+        <li>Flask</li>
+        <li>HTML, CSS, Bootsrap</li>
+      </ul>
+    </section>
 
+    <!-- My Project Section-->
+    <section>
+      <h2>My Projects</h2>
+      <ul>
+        <li>Tweet Generator: randomly selects words to create a sentence</li>
+        <li>Playlister: Allows users to create a playlist using Youtube</li>
+        <li>
+          Make Wiki: Allows individuals to login and upload and view Blog Posts
+        </li>
+      </ul>
+    </section>
 
-</body>
+    <!--About Me Section-->
 
+    <section>
+      <h2>About Me</h2>
+    </section>
+    <div class="about">
+      <p>
+        My name is Farhan Begg and I was born in Fiji. When I moved to America,
+        I was intrigued by the drastic difference in technology. At that very
+        moment I knew I wanted to involve myself in technology. I always wanted
+        to become someone important, I always wanted to make an Impact. Computer
+        Science gave me the opportunity to fullfill this wish. Now, here I am
+        today, 10 year later finishing my Baechelors in Computer Science.
+      </p>
+    </div>
+
+    <form action="/">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>
+          <input id="input-name" type="text" placeholder="Enter your Name" />
+          <label for="input-name">Full Name </label>
+        </li>
+
+        <li>
+          <input id="input-email" type="email" placeholder="Enter your Email" />
+          <label for="input-email">Email Address</label>
+        </li>
+
+        <li>
+          <input id="input-phone" type="tel" placeholder="Enter your Number" />
+          <label for="input-phone">Phone Number</label>
+        </li>
+        <button type="submit">submit</button>
+      </ul>
+    </form>
+
+    <footer>
+      <h2>Social Media</h2>
+      <ul class="footer-list">
+        <li><a href="https://github.com/NoblePrinceIII"> GitHub </a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/farhan-begg-57b48519b/">
+            Linkedin
+          </a>
+        </li>
+        <li><a href="https://www.instagram.com/"> Instagram </a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
