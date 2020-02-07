@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <title>My Portfolio</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <style>
       body {
         background-image: url("image.jpg");
@@ -83,6 +88,126 @@
         color: #999999;
         color: grey;
         padding: 1em;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          color: #999999;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 12px;
+          max-width: 350px;
+        }
+
+        h2 {
+          box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+          max-width: 250px;
+          color: #999999;
+          font-size: 15px;
+        }
+        .card {
+          position: relative;
+          top: 10px;
+          left: 10px;
+          box-shadow: 0 1px 2px 0 rgba(60, 60, 60, 0.2);
+          max-width: 150px;
+          text-align: center;
+        }
+
+        section {
+          position: relative;
+          top: -400px;
+          left: 200px;
+          max-width: 160px;
+        }
+        .about {
+          box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+          max-width: 140px;
+          position: relative;
+          top: -400px;
+          left: 200px;
+        }
+        form {
+          position: relative;
+          top: -970px;
+          left: 10px;
+          max-width: 170px;
+        }
+        footer {
+          position: relative;
+          top: -950px;
+          left: 10px;
+          color: #999999;
+          max-width: 170px;
+        }
+
+        .footer-list a {
+          color: #999999;
+          color: grey;
+          padding: 1em;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        h1 {
+          color: #999999;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 12px;
+          max-width: 350px;
+        }
+
+        h2 {
+          box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+          max-width: 250px;
+          color: #999999;
+          font-size: 15px;
+        }
+        .card {
+          position: relative;
+          top: 10px;
+          left: 10px;
+          box-shadow: 0 1px 2px 0 rgba(60, 60, 60, 0.2);
+          max-width: 150px;
+          text-align: center;
+        }
+        .title {
+          padding: 0em 1em 1em 1em;
+        }
+
+        section {
+          position: relative;
+          top: -400px;
+          left: 200px;
+          max-width: 160px;
+        }
+        .about {
+          box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2);
+          max-width: 130px;
+          position: relative;
+          top: -400px;
+          left: 20px;
+          padding: 5px;
+        }
+        form {
+          position: relative;
+          top: -970px;
+          left: 10px;
+          max-width: 170px;
+        }
+        footer {
+          position: relative;
+          top: -950px;
+          left: 10px;
+          color: #999999;
+          max-width: 170px;
+        }
+
+        .footer-list a {
+          color: #999999;
+          color: grey;
+          padding: 1em;
+        }
       }
     </style>
   </head>
